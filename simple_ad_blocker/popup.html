@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ad Blocker</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 20px;
+        }
+        label {
+            font-family: Arial, sans-serif;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px;
+            display: block;
+        }
+        #cookieCount {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" id="toggle" /> Enable Ad Blocker
+    </label>
+    <button id="clearCookies">Clear Cookies</button>
+    <div id="cookieCount">Active cookies: 0</div>
+    <script src="popup.js"></script>
+</body>
+</html>

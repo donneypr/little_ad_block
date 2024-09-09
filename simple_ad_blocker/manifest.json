@@ -4,7 +4,9 @@
     "manifest_version": 3,
     "permissions": [
         "declarativeNetRequest",
-        "storage"
+        "cookies",
+        "storage",
+        "tabs"
     ],
     "declarative_net_request": {
         "rule_resources": [
@@ -17,5 +19,11 @@
     },
     "host_permissions": [
         "*://*/*"
-    ]
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
 }
