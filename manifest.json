@@ -1,0 +1,29 @@
+{
+    "name": "Little Ad Blocker",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+        "declarativeNetRequest",
+        "cookies",
+        "storage",
+        "tabs"
+    ],
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_1",
+                "enabled": true,
+                "path": "rules.json"
+            }
+        ]
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
